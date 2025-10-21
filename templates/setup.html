@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Link</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Cadastrar Novo Link</h1>
+  <form method="post">
+    <label for="nome">Nome do link:</label>
+    <input type="text" name="nome" id="nome" required>
+    
+    <label for="url">URL do link:</label>
+    <input type="url" name="url" id="url" required>
+    
+    <button type="submit">Salvar</button>
+  </form>
+  <a class="button-link" href="{{ url_for('index') }}">Voltar ao Dashboard</a>
+</body>
+</html>
